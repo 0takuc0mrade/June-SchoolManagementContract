@@ -2,7 +2,7 @@ import { useState, useEffect } from 'react';
 import { ethers } from 'ethers';
 import { abi } from './abi.json';
 
-const contractAddress = 'YOUR_SMART_CONTRACT_ADDRESS';
+const contractAddress = '0xE8919C998B78f53C9c1315E2b01757786d2795e8';
 const contractABI = abi;
 
 export default function SchoolDApp() {
