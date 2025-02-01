@@ -13,7 +13,7 @@ export default function SchoolDApp() {
 
   useEffect(() => {
     if (window.ethereum) {
-      const provider = new ethers.providers.Web3Provider(window.ethereum);
+      const provider = new ethers.BrowserProvider(window.ethereum);
       const signer = provider.getSigner();
       setContract(new ethers.Contract(contractAddress, contractABI, signer));
     }
